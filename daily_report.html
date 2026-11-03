@@ -1,0 +1,141 @@
+<html><body style="font-family:sans-serif">
+<h2>Daily Market Risk Report - 30 Dec 2024</h2>
+<p>Day P&L: -35,522 USD | Hist VaR limit: 262,000.0 USD |
+Utilisation: 56% | Status: <b>OK</b> |
+VaR exceedance today: No</p>
+<h3>VaR / ES</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Hist</th>
+      <th>Var-Cov</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>VaR 99% (1d)</th>
+      <td>146631.0</td>
+      <td>121835.0</td>
+    </tr>
+    <tr>
+      <th>ES 99% (1d)</th>
+      <td>173800.0</td>
+      <td>140191.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Bond PV01</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PV01 (USD/bp)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>^FVX</th>
+      <td>445.0</td>
+    </tr>
+    <tr>
+      <th>^TNX</th>
+      <td>796.0</td>
+    </tr>
+    <tr>
+      <th>^TYX</th>
+      <td>1586.0</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Backtest</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>method</th>
+      <th>period</th>
+      <th>days</th>
+      <th>exceedances</th>
+      <th>expected</th>
+      <th>basel_zone</th>
+      <th>kupiec_LR</th>
+      <th>kupiec_p</th>
+      <th>kupiec_result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Historical</td>
+      <td>full sample</td>
+      <td>1313</td>
+      <td>21</td>
+      <td>13.1</td>
+      <td>Yellow</td>
+      <td>4.03</td>
+      <td>0.045</td>
+      <td>Reject</td>
+    </tr>
+    <tr>
+      <td>Historical</td>
+      <td>last 250 days</td>
+      <td>250</td>
+      <td>6</td>
+      <td>2.5</td>
+      <td>Yellow</td>
+      <td>3.56</td>
+      <td>0.059</td>
+      <td>Accept</td>
+    </tr>
+    <tr>
+      <td>Variance-Covariance</td>
+      <td>full sample</td>
+      <td>1313</td>
+      <td>33</td>
+      <td>13.1</td>
+      <td>Red</td>
+      <td>21.39</td>
+      <td>0.000</td>
+      <td>Reject</td>
+    </tr>
+    <tr>
+      <td>Variance-Covariance</td>
+      <td>last 250 days</td>
+      <td>250</td>
+      <td>6</td>
+      <td>2.5</td>
+      <td>Yellow</td>
+      <td>3.56</td>
+      <td>0.059</td>
+      <td>Accept</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Stress scenarios</h3><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>scenario</th>
+      <th>pnl_usd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rates +100bp parallel</td>
+      <td>-282699</td>
+    </tr>
+    <tr>
+      <td>Equities -10% (5 positions)</td>
+      <td>-500000</td>
+    </tr>
+    <tr>
+      <td>EURUSD &amp; USDINR -5%</td>
+      <td>-100000</td>
+    </tr>
+    <tr>
+      <td>COVID crash (9-23 Mar 2020) | worst day -561,831</td>
+      <td>-1266119</td>
+    </tr>
+    <tr>
+      <td>2022 rate shock (Jan-Oct 2022) | worst day -309,875</td>
+      <td>-2576002</td>
+    </tr>
+  </tbody>
+</table>
+<img src="exceedances.png" width="900">
+</body></html>

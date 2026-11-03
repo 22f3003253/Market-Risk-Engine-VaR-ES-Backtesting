@@ -1,0 +1,5 @@
+method,period,days,exceedances,expected,basel_zone,kupiec_LR,kupiec_p,kupiec_result
+Historical,full sample,1313,21,13.1,Yellow,4.03,0.045,Reject
+Historical,last 250 days,250,6,2.5,Yellow,3.56,0.059,Accept
+Variance-Covariance,full sample,1313,33,13.1,Red,21.39,0.0,Reject
+Variance-Covariance,last 250 days,250,6,2.5,Yellow,3.56,0.059,Accept
